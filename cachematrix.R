@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## constructing a function that calculates inverse matrix supporting caching 
 
-## Write a short comment describing this function
+## this one constructs the list containing the matrix and it's possible cache if present
 
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
@@ -16,10 +15,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## this buddy solves the matrix' inverse or take on if already present
 
 cacheSolve <- function(x, ...) {
-  ## Return a matrix that is the inverse of 'x'
   inverse <- x$getinverse()
   if(!is.null(inverse)){
     message("getting cached data")
